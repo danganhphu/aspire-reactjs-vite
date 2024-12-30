@@ -96,4 +96,7 @@ echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
 -   Ensure that you have the Prettier and ESLint extensions installed and enabled in VSCode.
 -   The settings provided will automatically format and lint your code on save and paste.
 
+## Project References (React)
+[React Vite](https://github.com/alan2207/bulletproof-react).
+
 Happy coding!
