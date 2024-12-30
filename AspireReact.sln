@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{070611C7-76A8-45BA-9256-DD734D777517}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		global.json = global.json
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2995C5BD-0BDD-486D-A0A3-52FD80620B56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspire", "aspire", "{6AA9DEF3-CF92-4F16-901C-048B6F788D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "src\aspire\ServiceDefaults\ServiceDefaults.csproj", "{303949F6-B744-486A-B271-CCECC155E1AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "src\aspire\AppHost\AppHost.csproj", "{D10F2127-8B32-462A-A20F-6AE9484801B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AA9DEF3-CF92-4F16-901C-048B6F788D59} = {2995C5BD-0BDD-486D-A0A3-52FD80620B56}
+		{303949F6-B744-486A-B271-CCECC155E1AD} = {6AA9DEF3-CF92-4F16-901C-048B6F788D59}
+		{D10F2127-8B32-462A-A20F-6AE9484801B7} = {6AA9DEF3-CF92-4F16-901C-048B6F788D59}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303949F6-B744-486A-B271-CCECC155E1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303949F6-B744-486A-B271-CCECC155E1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303949F6-B744-486A-B271-CCECC155E1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303949F6-B744-486A-B271-CCECC155E1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10F2127-8B32-462A-A20F-6AE9484801B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10F2127-8B32-462A-A20F-6AE9484801B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10F2127-8B32-462A-A20F-6AE9484801B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10F2127-8B32-462A-A20F-6AE9484801B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
