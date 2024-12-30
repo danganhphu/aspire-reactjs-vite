@@ -1,62 +1,59 @@
-# Design Patterns in TypeScript
-
-# Project Setup Guide
-
-This guide provides the necessary steps to set up the project, install required tools, and configure your Visual Studio Code (VSCode) editor to ensure consistency in code formatting and linting.
-
 ## Prerequisites
 
-1. **Visual Studio Code**: Make sure you have [VSCode](https://code.visualstudio.com/) installed.
+1. **NET 9.0 SDK**: Install [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
 2. **Node.js**: Install [Node.js and NPM](https://nodejs.org/en/).
 3. **Yarn**: Install [Yarn](https://yarnpkg.com/getting-started/install).
 
-## Project Setup
+> [!WARNING]
+> Ensure that you have [Docker](https://www.docker.com/) or [Podman](https://podman.io/) running on your machine (if running services through these tools).
+
+## Project Setup (ReactJs Vite)
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/danganhphu/reactjs-starter-kit
-   cd reactjs-starter-kit
-   cp .env.example .env
-   ```
+    ```bash
+    git clone https://github.com/danganhphu/aspire-reactjs-vite.git
+    cd src/react-vite
+    cp .env.example .env
+    ```
 
 2. **Install Dependencies**
 
-   Run the following command to install the necessary dependencies:
+    Run the following command to install the necessary dependencies:
 
-   ```bash
-   yarn install
-   ```
+    ```bash
+    yarn install
+    ```
 
 3. **VSCode Extensions**: Install the following VSCode extensions (if using VSCode):
 
-   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 4. **Create VSCode Settings** (if using VSCode)
 
-   If you are using VSCode, create a `.vscode` folder in the root of your project and add a `settings.json` file with the following content:
+    If you are using VSCode, create a `.vscode` folder in the root of your project and add a `settings.json` file with the following content:
 
-   ```bash
-   mkdir -p .vscode
-   echo '{
-     "editor.formatOnPaste": true,
-     "editor.formatOnSave": true,
-     "editor.defaultFormatter": "esbenp.prettier-vscode",
-     "editor.codeActionsOnSave": {
-       "source.fixAll.eslint": "explicit",
-       "source.fixAll.format": "explicit"
-     }
-   }' > .vscode/settings.json
-   ```
+    ```bash
+    mkdir -p .vscode
+    echo '{
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.format": "explicit"
+      }
+    }' > .vscode/settings.json
+    ```
 
 5. **Setup Husky (if applicable)**
 
-   If you are using Husky for Git hooks, make sure to set it up:
+    If you are using Husky for Git hooks, make sure to set it up:
 
-   ```bash
-   yarn prepare
-   ```
+    ```bash
+    yarn prepare
+    ```
 
 ### .husky/pre-commit
 
@@ -96,7 +93,7 @@ echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
 
 ## Additional Notes
 
-- Ensure that you have the Prettier and ESLint extensions installed and enabled in VSCode.
-- The settings provided will automatically format and lint your code on save and paste.
+-   Ensure that you have the Prettier and ESLint extensions installed and enabled in VSCode.
+-   The settings provided will automatically format and lint your code on save and paste.
 
 Happy coding!
